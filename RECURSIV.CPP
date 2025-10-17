@@ -1,0 +1,71 @@
+#include<stdio.h>
+E()
+T()
+Eprime()
+Tprime()
+F()
+void main()
+{
+	int i=0,error=0;
+	printf("Enter the input to check if valid:");
+	gets(input[i]);
+	E()
+	If(error==0)
+	{
+		printf("Accepted");
+	}
+	else
+	{
+		printf("Rejected");
+	}
+}
+void E()
+{
+	T()
+	Eprime()
+}
+void Eprime()
+{
+	If(input[i]=="+")
+	{
+		i++
+	}
+	T()
+	Eprime()
+	Else
+	{
+		return;
+	}
+T()
+{
+	F()
+	Tprime()
+}
+Tprime()
+{
+	If(input[i]=="*");
+	{
+		i++;
+	}
+	F()
+	Tprime()
+	Else
+	{
+	return;
+	}
+}
+F()
+{
+	If(input[i]=="(");
+	{
+		i++;
+	}
+	E()
+	If(input[i]==")");
+	{
+		i++;
+	}
+	Elseif(isalpha(input[i]))
+	{
+	}
+}
