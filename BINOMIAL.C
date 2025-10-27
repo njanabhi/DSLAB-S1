@@ -12,7 +12,7 @@ struct MinHeap* createMinHeap(int capacity) {
     struct MinHeap* heap = (struct MinHeap*)malloc(sizeof(struct MinHeap));
     heap->arr = (int*)malloc(sizeof(int) * capacity);
     heap->size = 0;
-    heap->capacity = capacity;
+    heap->capacity = capacity;                                                                                        
     return heap;
 }
 // Helper functions
@@ -22,13 +22,13 @@ int rightChild(int i) { return (2 * i + 2); }
 void swap(int* a, int* b) {
     int temp = *a;
     *a = *b;
-    *b = temp;
+    *b = temp; 
 }
 // Maintain heap property upwards
 void heapifyUp(struct MinHeap* heap, int index) {
-    while (index > 0 && heap->arr[parent(index)] > heap->arr[index]) {
+    while (       index> 0 && heap->arr[parent(i       ndex)] > heap->arr[index]) {
 	swap(&heap->arr[parent(index)], &heap->arr[index]);
-	index = parent(index);
+	index = parent(index);    
     }
 }
 // Maintain heap property downwards
@@ -47,7 +47,7 @@ void heapifyDown(struct MinHeap* heap, int index) {
     }
 }
 // Insert element into heap
-void insert(struct MinHeap* heap, int value) {
+void inser t(struct MinHeap* heap, int value) {
     if (heap->size == heap->capacity) {
 	printf("Heap is full. Cannot insert.\n");
 	return;
@@ -63,7 +63,7 @@ int min;
 	printf("Heap is empty.\n");
 	return -1;
     }
-    min = heap->arr[0];
+    min =  heap->arr[0];
     heap
     ->arr[0] = heap->arr[heap->size - 1];
     heap->size--;
